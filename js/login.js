@@ -45,7 +45,15 @@ loginsubmit.addEventListener('click', function(e) {
     // Create user login, with localStorage
     const email = document.getElementById('email').value
     const password = document.getElementById('password').value
-    alert('Du er logget ind')
+
+    if (email !== localStorage.getItem('email')) {
+        errorMsg.textContent = 'Forkert Email'
+    } else if (password !== localStorage.getItem('password')) {
+        errorMsg.textContent = 'Forkert Password'
+    } else {
+        
+        alert('Du er logget ind')
+    }
 })
 
 
