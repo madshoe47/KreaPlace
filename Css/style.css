@@ -1,0 +1,22 @@
+
+.registre, .login {
+    width: 400px;
+    background: #fefefe;
+    padding: 2em;
+    margin: 2em auto;
+    border: 2px solid #eeeeee;
+}
+
+.forms {
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+.forms div {
+    margin: .4em 0;
+}
+
+#error {
+    color: red;
+}

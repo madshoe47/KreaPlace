@@ -10,13 +10,55 @@
 
 <body>
 
+<header>
+
+</header>
+
+
+<div class="registre">
+    <form class="forms" id="registreform" action="" method="POST">
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div>
+            <label for="password">Kodeord:</label>
+            <input type="password" name="password" id="password">
+        </div>
+
+        <div>
+            <label for="repassword">Gentag Kodeord:</label>
+            <input type="password" name="repassword" id="repassword">
+        </div>
+
+        <input type="submit" value="Opret">
+        <p id="error"></p>
+    </form>
+</div>
+
+<div class="login">
+    <form class="forms" id="loginform" action="">
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="loginemail">
+        </div>
+    
+        <div>
+            <label for="password">Kodeord:</label>
+            <input type="password" name="password" id="loginpassword">
+        </div>
+        <p id="loginerror"></p>
+        <input type="submit" value="Login">
+    </form>
+    
+
+</div>
 
 
 
 
-
-
-    <script src="JavaScript/javascript.js"></script>
+    <script src="js/login.js"></script>
 </body>
 
 </html>
