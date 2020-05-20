@@ -56,6 +56,29 @@ loginsubmit.addEventListener('click', function(e) {
     }
 })
 
+// Filter appere
+const filter = document.getElementById('filter')
+const search = document.getElementById('searchbtn')
+let showFilter = false
+
+
+search.onmouseleave = function() {
+    if (!showFilter)
+        search.style.clipPath = "circle(50.0% at 50% 50%)"
+}
+
+
+search.onclick = function() {
+    showFilter = !showFilter
+    if (showFilter) {
+    search.style.clipPath = "circle(100.0% at 50% 50%)"
+     filter.style.clipPath = "circle(120.0% at 55% 0%)"
+ } else {
+    search.style.clipPath = "circle(50.0% at 50% 50%)"
+    filter.style.clipPath = "circle(00.0% at 55% 0%)"
+ }
+}
+
 
 
 

@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d577d4a2e5.js" crossorigin="anonymous"></script>
     <title>KreaPlace</title>
     <link rel="stylesheet" href="Css/style.css">
 </head>
@@ -11,8 +12,44 @@
 <body>
 
 <header>
+    <p id="logo">KreaPlace</p>
+    <ul>
+        <li>Menu 1</li>
+        <li>Menu 2</li>
+        <li>Menu 3</li>
+    </ul>
 
+    <button id="login">Login</button>
 </header>
+
+<div>
+    <button>Nyeste</button>
+    <button>Populære</button>
+    <button>Anbefaldet</button>
+    <i class="fas fa-search" id="searchbtn"></i>
+</div>
+
+<div id="filter" class="filter">
+    <form action="">
+        <label for="type">Type</label>
+        <select id="type">
+            <option value="Hækling">Hækling</option>
+            <option value="Strik">Strik</option>
+        </select>
+        <label for="niveau">Niveau</label>
+        <select id="niveau">
+            <option value="Begynder">Begynder</option>
+            <option value="Trænet">Trænet</option>
+            <option value="Ekspert">Ekspert</option>
+        </select>
+        <label for="koen">Køn</label>
+        <select id="koen">
+            <option value="Begynder">Mand</option>
+            <option value="Trænet">Dame</option>
+        </select>
+
+    </form>
+</div>
 
 
 <div class="registre">
