@@ -12,90 +12,24 @@
 <body>
 
 <header>
-    <p id="logo">KreaPlace</p>
+    <img src="images/logo_lyserd.png" alt="Kreaplace Logo">
     <ul>
         <li>Menu 1</li>
         <li>Menu 2</li>
         <li>Menu 3</li>
     </ul>
 
-    <button id="login">Login</button>
+    <div>
+        <div class="profilbillede">
+            <img src="images/profil.jpg" alt="Anna Profil billede">
+        </div>
+        <button id="login">Login</button>
+        <button>Nyt Opslag</button>
+    </div>
 </header>
 
-<div>
-    <button>Nyeste</button>
-    <button>Populære</button>
-    <button>Anbefaldet</button>
-    <i class="fas fa-search" id="searchbtn"></i>
-</div>
 
-<div id="filter" class="filter">
-    <form action="">
-        <label for="type">Type</label>
-        <select id="type">
-            <option value="Hækling">Hækling</option>
-            <option value="Strik">Strik</option>
-        </select>
-        <label for="niveau">Niveau</label>
-        <select id="niveau">
-            <option value="Begynder">Begynder</option>
-            <option value="Trænet">Trænet</option>
-            <option value="Ekspert">Ekspert</option>
-        </select>
-        <label for="koen">Køn</label>
-        <select id="koen">
-            <option value="Begynder">Mand</option>
-            <option value="Trænet">Dame</option>
-        </select>
-
-    </form>
-</div>
-
-
-<div class="registre">
-    <form class="forms" id="registreform" action="" method="POST">
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
-        </div>
-
-        <div>
-            <label for="password">Kodeord:</label>
-            <input type="password" name="password" id="password">
-        </div>
-
-        <div>
-            <label for="repassword">Gentag Kodeord:</label>
-            <input type="password" name="repassword" id="repassword">
-        </div>
-
-        <input type="submit" value="Opret">
-        <p id="error"></p>
-    </form>
-</div>
-
-<div class="login">
-    <form class="forms" id="loginform" action="">
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="loginemail">
-        </div>
-    
-        <div>
-            <label for="password">Kodeord:</label>
-            <input type="password" name="password" id="loginpassword">
-        </div>
-        <p id="loginerror"></p>
-        <input type="submit" value="Login">
-    </form>
-    
-
-</div>
-
-
-
-
-    <script src="js/login.js"></script>
+    <script src="js/header.js"></script>
 </body>
 
 </html>
