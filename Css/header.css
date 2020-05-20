@@ -1,0 +1,307 @@
+:root {
+    --gray: #F3F3F3;
+    --white: white;
+    --pink: #F1ABCA;
+    --light-purple: #C46C9A;
+    --dark-purple: #6D1770;
+    --border-color: #707070;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.825rem;
+    box-sizing: border-box;
+}
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    max-width: 1920px;
+    background-color: var(--gray);
+    height: 100px;
+    font-size: 1em;
+    /* padding: 0px 5em; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    /* reset Anger Tags (Links) */
+    text-decoration: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header li {
+    margin: 0 2em;
+    font-size: 1.4em;
+    position: relative;
+}
+
+.logo {
+    height: 90%;
+    min-height: 50px;
+    /* margin-left: 8%; */
+}
+
+.profil {
+    /* margin-right: 8%; */
+}
+
+.menu-active::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    border-bottom: 4px var(--light-purple) solid;
+    left: 0;
+    bottom: -10px;
+}
+
+.menu-dropdown {
+    position: absolute;
+    top: .5em;
+    right: -1.4em;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-radius: 5px;
+    border-top: 10px solid var(--dark-purple);
+}
+
+.connect-dropdown::before {
+    content: '';
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+    border: 30px var(--gray) solid;
+    left: 0em;
+    top: 60px;
+    display: none;
+}
+
+#login {
+    border: none;
+    font-size: 1.4em;
+    display: none;
+}
+
+
+.profilstatus {
+    display: flex;
+    align-items: center;
+}
+
+.profilstatus img {
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    max-width: 50px;
+    max-height: 50px;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.btn {
+    color: var(--white);
+    background-color: var(--light-purple);
+    border: none;
+    padding: .4em;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 1em;
+}
+
+/* Hover states */
+#login:hover,
+header a:hover,
+.menu-grid li a:hover {
+    color: var(--light-purple);
+}
+
+#login:active,
+header a:active,
+#login:focus,
+header a:focus {
+    color: var(--dark-purple);
+}
+
+header a:visited {
+    color: initial;
+}
+
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: grid;
+    position: absolute;
+    grid-template-columns: repeat(5, 170px);
+    grid-template-rows: auto;
+    grid-column-gap: 2em;
+    padding: 2em 1em;
+    width: auto;
+    height: auto;
+    background-color: var(--gray);
+    top: 125px;
+    margin: 0 50%;
+    transform: translate(-50%, 0);
+    display: none;
+
+}
+
+.dropdown-menu h2 {
+    margin-bottom: 1em;
+    font-size: 1.3em;
+    color: var(--light-purple)
+}
+
+.dropdown-menu ul {
+    list-style-type: none;
+}
+
+.dropdown-menu li {
+    margin: 0;
+    font-size: 1.1em;
+    padding: .2em;
+}
+
+.modal {
+    width: 400px;
+    position: absolute;
+    background: var(--white);
+    border: 2px solid var(--border-color);
+    padding: 5em;
+    top: 150px;
+    margin: 0 50%;
+    transform: translate(-50%, 0);
+    display: none;
+}
+
+.modal .logo {
+    width: 200px;
+    margin: -3em 50% 2em 50%;
+    transform: translate(-50%, 0);
+}
+
+.modal form input,
+.modal form label {
+    width: 100%;
+    padding: .6em;
+    font-size: 1.2em;
+    border: none;
+    margin: .4em;
+}
+
+.modal form input {
+    background-color: var(--gray);
+    margin-bottom: 1.5em;
+}
+
+.modal input[type="submit"] {
+    background-color: var(--light-purple);
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 3em;
+}
+
+.eller {
+    background-color: white;
+    display: inline;
+    margin: 0 40%;
+    transform: translate(-50%, 0);
+    padding: 2em;
+    position: relative;
+    font-size: 1em;
+}
+
+hr {
+    height: 2px;
+    background-color: gray;
+    /* margin: 2em 0;   */
+}
+
+#facebook-btn {
+    background-color: rgb(24, 119, 242);
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    border-radius: 2px;
+    width: 100%;
+    margin: 2em 0;
+    padding: .6em;
+    border: none;
+}
+
+@media screen and (max-width: 1000px) {
+    :root {
+        font-size: .8rem;
+    }
+
+    /* Header navigation */
+    .logo {
+        margin-left: 6%;
+    }
+
+    .profil {
+        margin-right: 6%;
+    }
+
+    header {
+        height: 70px;
+        padding: 1em 0;
+    }
+
+}
+
+@media screen and (max-width: 820px) {
+    :root {
+        font-size: .7rem;
+    }
+
+    header li {
+        margin: 0 1.5em;
+        font-size: 1.2em;
+    }
+
+    header {
+        height: 50px;
+    }
+    .btn {
+        font-size: 1.2em;
+    }
+
+    .menu-dropdown {
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 7px solid var(--dark-purple);
+    }
+
+}
+
+/* Tablet version */
+@media screen and (max-width: 650px) {
+    header {
+        background: red;
+    }
+
+    .profilstatus img {
+        max-width: 40px;
+        max-height: 40px;
+    }
+
+}
