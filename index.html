@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d577d4a2e5.js" crossorigin="anonymous"></script>
     <title>KreaPlace</title>
-    <link rel="stylesheet" href="Css/style.css">
+    <!-- <link rel="stylesheet" href="Css/style.css"> -->
     <link rel="stylesheet" href="Css/header.css">
 </head>
 
@@ -14,117 +14,172 @@
     <div class="wrapper">
         <header>
             <img class="logo" src="images/logo_lyserd.png" alt="Kreaplace Logo">
-                <nav>
-                    <ul>
-                        <li class="menu-active"><a href="/udforsk">Udforsk</a></li>
-                        <li class="connect-dropdown"><a href="/opskrifter">Opskrifter <span class="menu-dropdown"></span></a>
-                        </li>
-                        <li><a href="/minside">Min side</a></li>
-                        <li><a href="/forum">Forum</a></li>
-                    </ul>
-                </nav>
-        
-                <div class="dropdown-menu">
-                    <div class="menu-grid">
-                        <h2>Gratis Opskrifter</h2>
-                        <ul>
-                            <li><a href="#">Damer</a></li>
-                            <li><a href="#">Fodtøj</a> </li>
-                            <li><a href="#">Børn</a></li>
-                            <li><a href="#">Interiør</a></li>
-                            <li><a href="#">Poncho & Sjal</a></li>
-                            <li><a href="#">Højtider & Mærkedage</a></li>
-                            <li><a href="#">Dyr & Legetøj</a></li>
-                            <li><a href="#">Tasker</a></li>
-                            <li><a href="#">Kæledyr</a></li>
-                        </ul>
-                    </div>
-                    <div class="menu-grid">
-                        <h2>Betalte Opskrifter</h2>
-                        <ul>
-                            <li>Damer</li>
-                            <li>Fodtøj</li>
-                            <li>Børn</li>
-                            <li>Interiør</li>
-                            <li>Poncho & Sjal</li>
-                            <li>Højtider & Mærkedage</li>
-                            <li>Dyr & Legetøj</li>
-                            <li>Tasker</li>
-                            <li>Kæledyr</li>
-                        </ul>
-                    </div>
-                    <div class="menu-grid">
-                        <h2>Betalte Mærker</h2>
-                        <ul>
-                            <li>Lene Holme</li>
-                            <li>LillteHappyCrochet</li>
-                            <li>KniteBy TrineP</li>
-                            <li>Rico</li>
-                            <li>Oj Hæklerier</li>
-                            <li>ByCVig</li>
-                            <li>BC GARN</li>
-                            <li>Du Store Apakka</li>
-                            <li>Strikkeopskrifter</li>
-                            <li>Hækleopskrifter</li>
-                        </ul>
-                    </div>
-                    <div class="menu-grid">
-                        <h2>Mærker</h2>
-                        <ul>
-                            <li>DROPS</li>
-                            <li>MayFlower</li>
-                            <li>Dale Garn</li>
-                            <li>Go Handmade</li>
-                            <li>Monos Del Urguay</li>
-                            <li>Jârbo</li>
-                            <li>Istex</li>
-                        </ul>
-                    </div>
-                    <div class="menu-grid">
-                        <h2>Årstider</h2>
-                        <ul>
-                            <li>Forår</li>
-                            <li>Sommer</li>
-                            <li>Efterår</li>
-                            <li>Vinter</li>
-                        </ul>
-                    </div>
-        
-        
+            <nav>
+                <ul>
+                    <li class="menu-active"><a href="/udforsk">Udforsk</a></li>
+                    <li class="connect-dropdown"><a href="/opskrifter">Opskrifter <span class="menu-dropdown"></span></a>
+                    </li>
+                    <li><a href="/minside">Min side</a></li>
+                    <li><a href="/forum">Forum</a></li>
+                </ul>
+            </nav>
+
+            <div class="profil">
+                <button id="loginbtn" class="btn">Login</button>
+                <div class="profilstatus">
+                    <img src="images/profil.jpg" alt="Anna Profil billede">
+                    <button class="btn">Nyt Opslag</button>
                 </div>
-        
-                <div class="profil">
-                    <button id="login">Login</button>
-                    <div class="profilstatus">
-                        <img src="images/profil.jpg" alt="Anna Profil billede">
-                        <button class="btn">Nyt Opslag</button>
-                    </div>
-                </div>
-    
+            </div>
             
+            <div class="dropdown-menu">
+                <div class="menu-grid">
+                    <h2>Gratis Opskrifter</h2>
+                    <ul>
+                        <li><a href="#">Damer</a></li>
+                        <li><a href="#">Fodtøj</a> </li>
+                        <li><a href="#">Børn</a></li>
+                        <li><a href="#">Interiør</a></li>
+                        <li><a href="#">Poncho & Sjal</a></li>
+                        <li><a href="#">Højtider & Mærkedage</a></li>
+                        <li><a href="#">Dyr & Legetøj</a></li>
+                        <li><a href="#">Tasker</a></li>
+                        <li><a href="#">Kæledyr</a></li>
+                    </ul>
+                </div>
+                <div class="menu-grid">
+                    <h2>Betalte Opskrifter</h2>
+                    <ul>
+                        <li>Damer</li>
+                        <li>Fodtøj</li>
+                        <li>Børn</li>
+                        <li>Interiør</li>
+                        <li>Poncho & Sjal</li>
+                        <li>Højtider & Mærkedage</li>
+                        <li>Dyr & Legetøj</li>
+                        <li>Tasker</li>
+                        <li>Kæledyr</li>
+                    </ul>
+                </div>
+                <div class="menu-grid">
+                    <h2>Betalte Mærker</h2>
+                    <ul>
+                        <li>Lene Holme</li>
+                        <li>LillteHappyCrochet</li>
+                        <li>KniteBy TrineP</li>
+                        <li>Rico</li>
+                        <li>Oj Hæklerier</li>
+                        <li>ByCVig</li>
+                        <li>BC GARN</li>
+                        <li>Du Store Apakka</li>
+                        <li>Strikkeopskrifter</li>
+                        <li>Hækleopskrifter</li>
+                    </ul>
+                </div>
+                <div class="menu-grid">
+                    <h2>Mærker</h2>
+                    <ul>
+                        <li>DROPS</li>
+                        <li>MayFlower</li>
+                        <li>Dale Garn</li>
+                        <li>Go Handmade</li>
+                        <li>Monos Del Urguay</li>
+                        <li>Jârbo</li>
+                        <li>Istex</li>
+                    </ul>
+                </div>
+                <div class="menu-grid">
+                    <h2>Årstider</h2>
+                    <ul>
+                        <li>Forår</li>
+                        <li>Sommer</li>
+                        <li>Efterår</li>
+                        <li>Vinter</li>
+                    </ul>
+                </div>
+
+
+            </div>
+
         </header>
+
+        <div id="blur" class="blur"></div>
+
+        <div id="loginmodal" class="modal">
+
+            <div class="login">
+                <img class="logo" src="images/logo_lyserd.png" alt="Kreaplace Logo">
+                <form id="loginform" action="">
+                    <label for="email">Brugernavn eller E-mail</label>
+                    <input type="text" id="email" placeholder="Eks. kreaplace@krea.nu">
+                    <label for="password">Adgangskode</label>
+                    <input type="password" id="password" placeholder="Eks. H3B8pIT3Nsk3">
+                    <p id="loginerror"></p>
+                    <input class="btn" type="submit" value="Login">
     
-        <div class="modal">
+                    <p class="eller">ELLER</p>
+                    <hr>
+    
+                    <button id="facebook-btn">Log in Med Facebook</button>
+                    
+                </form>
+            </div>
+                <hr>
+            <p class="registrep">Har du ikke en Konto?  <span><Button id="opret">Opret Profil</Button></span></p>
+
+        </div>
+    </div>  <!-- End of Wrapper -->
+   
+    <template id="registreTemplate">
+        <div class="registre">
             <img class="logo" src="images/logo_lyserd.png" alt="Kreaplace Logo">
-            <form action="">
-                <label for="username">Brugernavn eller E-mail</label>
-                <input type="text" id="username" placeholder="Eks. kreaplace@krea.nu">
+            <form id="registreform" action="">
+                <label for="regusername">Brugernavn</label>
+                <input type="text" id="regusername" placeholder="Eks. Anne Mikkelsen">
+                <label for="regemail">E-mail</label>
+                <input type="email" id="regemail" placeholder="Eks. anne-mikkelsen@gmail.com">
+                <label for="regpassword">Adgangskode</label>
+                <input type="password" id="regpassword" placeholder="Eks. anne123">
+                <label for="reregpassword">Gentaste Adgangskode</label>
+                <input type="password" id="reregpassword" placeholder="Eks. anne123">
+                <p id="registreerror"></p>
+                <input class="btn" type="submit" value="Opret">
+                
+            </form>
+
+            <hr>
+
+            <button class="btn changetologin" id="skiftlogin">Login</button>
+
+        </div>
+    </template>
+
+    <!-- <template id="loginTemplate">
+        <div class="login">
+            <img class="logo" src="images/logo_lyserd.png" alt="Kreaplace Logo">
+            <form id="loginform" action="">
+                <label for="email">Brugernavn eller E-mail</label>
+                <input type="text" id="email" placeholder="Eks. anne-mikkelsen@gmail.com">
                 <label for="password">Adgangskode</label>
-                <input type="text" id="password" placeholder="Eks. Kreaplace1234">
-                <input type="submit">
-    
+                <input type="text" id="password" placeholder="Eks. anne123">
+                <p id="loginerror"></p>
+                <input class="btn" type="submit" value="Login">
+
                 <p class="eller">ELLER</p>
                 <hr>
-    
+
                 <button id="facebook-btn">Log in Med Facebook</button>
-    
+                
             </form>
         </div>
-    </div>
-    
+        <hr>
+        <p class="registre">Har du ikke en Konto?  <span><Button id="opret">Opret Profil</Button></span></p>
+
+    </template> -->
 
 
     <script src="js/header.js"></script>
+    <script src="js/login.js"></script>
 </body>
 
 </html>
