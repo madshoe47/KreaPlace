@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/d577d4a2e5.js" crossorigin="anonymous" SameSite="Lax"></script>
+    <script src="https://kit.fontawesome.com/d577d4a2e5.js" crossorigin="anonymous"></script>
     <title>KreaPlace</title>
     <!-- <link rel="stylesheet" href="Css/style.css"> -->
     <link rel="stylesheet" href="Css/header.css">
@@ -134,11 +134,11 @@
 
             <div class="login">
                 <img class="logo" src="images/logo_lyserd.png" alt="Kreaplace Logo">
-                <form id="loginform" action="">
+                <form id="loginform">
                     <label for="email">Brugernavn eller E-mail</label>
                     <input type="text" id="email" placeholder="Eks. kreaplace@krea.nu" required>
                     <label for="password" >Adgangskode</label>
-                    <input type="password" id="password" placeholder="Eks. H3B8pIT3Nsk3" autocomplete required>
+                    <input type="password" id="password" placeholder="Eks. H3B8pIT3Nsk3" autocomplete="off" required>
                     <p id="loginerror"></p>
                     <input class="btn" type="submit" value="Login">
                 </form>
@@ -156,15 +156,15 @@
 
             <div class="registre">
                 <img class="logo" src="images/logo_lyserd.png" alt="Kreaplace Logo">
-                <form id="registreform" action="">
+                <form id="registreform">
                     <label for="regusername" >Brugernavn</label>
                     <input type="text" id="regusername" placeholder="Eks. Anne Mikkelsen" title="Dit Navn" required>
                     <label for="regemail">E-mail</label>
                     <input type="email" id="regemail" placeholder="Eks. anne-mikkelsen@gmail.com" title="Din Email" required>
                     <label for="regpassword">Adgangskode</label>
-                    <input type="password" id="regpassword" placeholder="Eks. anne123" title="Din Adgangskode" autocomplete required>
+                    <input type="password" id="regpassword" placeholder="Eks. anne123" title="Din Adgangskode" autocomplete="off" required>
                     <label for="reregpassword">Gentaste Adgangskode</label>
-                    <input type="password" id="reregpassword" placeholder="Eks. anne123" title="Gentast venligts din adgangskode" autocomplete required>
+                    <input type="password" id="reregpassword" placeholder="Eks. anne123" title="Gentast venligts din adgangskode" autocomplete="off" required>
                     <p id="registreerror"></p>
                     <input class="btn" type="submit" value="Opret">
                     
