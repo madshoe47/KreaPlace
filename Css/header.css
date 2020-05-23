@@ -170,6 +170,7 @@ header li {
     max-width: 50px;
     max-height: 50px;
     object-fit: cover;
+    margin-right: 1em;
     object-position: top center;
 }
 
@@ -356,6 +357,10 @@ hr {
     border: none;
     /* font-size: 1em; */
     background-color: transparent;   
+}
+
+.onlyLogin {
+    display: none;
 }
 
 

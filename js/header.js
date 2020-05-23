@@ -22,12 +22,12 @@ document.getElementById('loginbtn').addEventListener('click', loginEnable)
 document.getElementById('mobil-loginbtn').addEventListener('click', loginEnable)
 
 // Fjerner blur og modal, (lukning af modal)
-document.getElementById('blur').addEventListener('click', function() {
+document.getElementById('blur').addEventListener('click', removeModal)
+function removeModal() {
     modal.style.display = 'none'
     registremodal.style.display = 'none'
     blur.style.display = 'none'
-})
-
+}
 // Skift mellem login og registre menu
 document.getElementById('opret').addEventListener('click', toRegistreMenu)
 document.getElementById('skiftlogin').addEventListener('click', toLoginMenu)
