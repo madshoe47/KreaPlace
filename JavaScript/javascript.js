@@ -1,7 +1,6 @@
 'use strict'
 const main = document.getElementById('main')
 document.getElementById('pops').addEventListener('click', function() {
-    console.log('hey', main);
     
     main.innerHTML = `<div id="billede1">
     <p class="tekst">Strikning</p>
