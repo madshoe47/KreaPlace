@@ -2,47 +2,82 @@
 
 // Når Header Login knappen trykkes
 const modal = document.getElementById('loginmodal')
+const registremodal = document.getElementById('registremodal')
 const blur = document.getElementById('blur')
-document.getElementById('loginbtn').addEventListener('click', function() {
+
+// Åbner Modal til login
+function loginEnable(e) {
     blur.style.display = 'block'
     modal.style.display = 'block'
     document.getElementById('email').focus()
-})
 
-// Fjerner blur og modal
+    // Hvis det er mobil, luk også mobil navigationen
+    if (e.path[0].dataset) {
+        mobilNavOn()
+    }
+}
+
+// Listner til åbning af modal
+document.getElementById('loginbtn').addEventListener('click', loginEnable)
+document.getElementById('mobil-loginbtn').addEventListener('click', loginEnable)
+
+// Fjerner blur og modal, (lukning af modal)
 document.getElementById('blur').addEventListener('click', function() {
     modal.style.display = 'none'
+    registremodal.style.display = 'none'
     blur.style.display = 'none'
 })
 
 // Skift mellem login og registre menu
-document.getElementById('opret').addEventListener('click', function() {
-    // Find template
-    const registretemplate = document.getElementById('registreTemplate').content.querySelector('.registre')
-
-    const logintemplate = document.getElementById('loginTemplate')
-    // console.log(logintemplate);
+document.getElementById('opret').addEventListener('click', toRegistreMenu)
+document.getElementById('skiftlogin').addEventListener('click', toLoginMenu)
 
 
-    // Fjern login form children (børn)
-    while(modal.children.length > 0) {
-        modal.removeChild(modal.children.item(0));
-    }
-
-    modal.appendChild(registretemplate)
-
-    const registreform = document.getElementById('registreform')
-    const registresubmit = registreform.querySelector('input[type="submit"]')
-    registresubmit.addEventListener('click', registere) 
-
-})
-
-function removeElement(className) {
-    // Removes an element from the document
-    var element = modal.getElementsByClassName(className)[0]
-    element.parentNode.removeChild(element);
+function toRegistreMenu() {
+    modal.style.display = 'none'
+    registremodal.style.display = 'block'
 }
 
-// document.getElementById('skiftlogin').addEventListener('click', function() {
+function toLoginMenu() {
+    modal.style.display = 'block'
+    registremodal.style.display = 'none'
+}
 
-// })
+// Lytter til begge navigationer
+document.getElementById('dropdown-btn').addEventListener('click', enableDropdownMenu)
+document.getElementById('mobil-dropdown-btn').addEventListener('click', enableDropdownMenu)
+
+// Synlig og usynliggøre Opskrift menuen
+let menuEnabelt = false
+function enableDropdownMenu(e) {
+    e.preventDefault()
+    const menu = document.getElementById('dropdownMenu')
+
+    if (menuEnabelt) {
+        menu.style.display = 'none'
+        
+    } else {
+        menu.style.display = 'grid'
+    }
+    menuEnabelt = !menuEnabelt
+    
+    // Hvis det er fra mobil navigation
+    if (e.path[0].dataset) {
+        mobilNavOn()
+    }
+    
+}
+
+// Mobil nav enable
+let mobilNavEnable = false
+function mobilNavOn() {
+    const nav = document.getElementById('mobil-nav')
+    if (mobilNavEnable) {
+        nav.style.display = 'none'
+        
+    } else {
+        nav.style.display = 'flex'
+    }
+    mobilNavEnable = !mobilNavEnable
+}
+document.getElementById('mobil-nav-btn').addEventListener('click', mobilNavOn)
