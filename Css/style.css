@@ -62,6 +62,12 @@
     font-size: 12px
 }
 
+.bigphoto {
+    width: 100%;
+    grid-area: span 2 / 3 / auto / 5;
+    position: relative;
+}
+
 #billede1 {
     width: 100%;
     grid-area: 1 / 2 / 2 / 3;
@@ -128,7 +134,7 @@
 /*--------------- FOOTER ----------------*/
 
 footer {
-    position: absolute;
+
     left: 0;
     width: 100%;
     display: flex;
