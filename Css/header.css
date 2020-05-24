@@ -5,6 +5,7 @@
     --light-purple: #C46C9A;
     --dark-purple: #6D1770;
     --border-color: #707070;
+    --edge: gray;
 }
 
 html {
@@ -127,6 +128,7 @@ header li {
     bottom: -10px;
 }
 
+
 .menu-dropdown {
     position: absolute;
     top: .5em;
@@ -137,16 +139,19 @@ header li {
     border-right: 9px solid transparent;
     border-radius: 5px;
     border-top: 9px solid var(--dark-purple);
+    /* z-index: 10; */
 }
 
 .connect-dropdown::before {
     content: '';
-    z-index: -1;
+    z-index: 6;
     width: 100%;
     position: absolute;
     border: 30px var(--gray) solid;
+    /* outline: 2px solid var(--edge); */
     left: 0em;
     top: 60px;
+    /* border: 2px solid var(--edge); */
     display: none;
 }
 
@@ -202,7 +207,7 @@ header a:focus {
 }
 
 header a:visited {
-    color: initial;
+    color: var(--light-purple);
 }
 
 
@@ -216,15 +221,19 @@ header a:visited {
     position: absolute;
     grid-template-columns: repeat(auto-fit, minmax(150px, 170px));
     grid-template-rows: auto;
-    grid-column-gap: 2em;
+    grid-column-gap: 1em;
     padding: 2em 3em;
-    max-width: 1050px;
+    max-width: 985px;
     width: 80%;
     height: auto;
     background-color: var(--gray);
     top: 125px;
     margin: 0 50%;
     transform: translate(-50%, 0);
+    z-index: 5;
+    -webkit-box-shadow: 0px 0px 24px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 24px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 24px -6px rgba(0,0,0,0.75);
 }
 
 .dropdown-menu h2 {

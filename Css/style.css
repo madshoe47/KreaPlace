@@ -3,35 +3,14 @@
     padding: 0;
 }
 
-.registre,
-.login {
-    width: 400px;
-    background: #fefefe;
-    padding: 2em;
-    margin: 2em auto;
-    border: 2px solid #eeeeee;
-}
-
-.forms {
-    display: flex;
-    flex-flow: column wrap;
-
-}
-
-.forms div {
-    margin: .4em 0;
-}
-
-#error {
-    color: red;
-}
-
 .fa-search {
-    font-size: 1.4em;
+    font-size: 1.6em;
     padding: .5em;
     transition: clip-path 1s;
     clip-path: circle(50.0% at 50% 50%);
     background-color: #C46C9A;
+    /* width: 35px;
+    height: 35px; */
 }
 
 .fa-search:hover {
@@ -39,28 +18,41 @@
     background-color: #C46C9A;
 }
 
-.filter {
+.formfilter {
     background: #C46C9A;
+    width: 100%;
+    padding: 1em 0;
+    margin: 0 auto;
+}
+
+.filter {
     padding: 1em;
-    display: inline-block;
-    clip-path: circle(0.0% at 60% 0%);
+    display: block;
+    min-width: 400px;
+    clip-path: circle(0.0% at 80% 0%);
     transition: clip-path 1.2s ease-in-out;
     /* height: 19px; */
     /* transition: transform 2s; */
-
+    margin: 0 50%;
+    transform: translate(-50%, 0);
 }
 
 /*--------------- FORSIDE ----------------*/
 
-.wrapper-buttons {
+/* .wrapper-buttons {
     display: flex;
     justify-content: center;
     width: 100%;
-}
+} */
 
 .buttons {
     display: flex;
     align-items: center;
+    min-width: 450px;
+    width: 450px;
+    justify-content: space-around;
+    margin: 1.4em 50% 1.2em 50%;
+    transform: translate(-50%, 0);
 }
 
 .wrapper-main {
@@ -78,7 +70,7 @@
     border: none;
     color: white;
     padding: 9px 15px 9px 15px;
-    margin: 10px 15px 10px 15px;
+    /* margin: 10px 15px 10px 15px; */
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -88,9 +80,8 @@
 
 
 #searchicon {
-    width: 30px;
-    height: 30px;
-    margin: 0px 0px 0px 15px;
+    
+    /* margin: 0px 0px 0px 15px; */
 }
 
 

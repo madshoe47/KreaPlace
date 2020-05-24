@@ -125,10 +125,8 @@
                     <li><a href="#">Vinter</a></li>
                 </ul>
             </div>
-
-
-
         </div>
+
         <div id="blur" class="blur"></div>
 
         <div id="loginmodal" class="modal">
@@ -143,7 +141,6 @@
                     <p id="loginerror"></p>
                     <input class="btn" type="submit" value="Login">
                 </form>
-
                 <p class="eller">ELLER</p>
                 <hr>
                 <button id="facebook-btn">Log in Med Facebook</button>
@@ -161,11 +158,14 @@
                     <label for="regusername">Brugernavn</label>
                     <input type="text" id="regusername" placeholder="Eks. Anne Mikkelsen" title="Dit Navn" required>
                     <label for="regemail">E-mail</label>
-                    <input type="email" id="regemail" placeholder="Eks. anne-mikkelsen@gmail.com" title="Din Email" required>
+                    <input type="email" id="regemail" placeholder="Eks. anne-mikkelsen@gmail.com" title="Din Email"
+                        required>
                     <label for="regpassword">Adgangskode</label>
-                    <input type="password" id="regpassword" placeholder="Eks. anne123" title="Din Adgangskode" autocomplete="off" required>
+                    <input type="password" id="regpassword" placeholder="Eks. anne123" title="Din Adgangskode"
+                        autocomplete="off" required>
                     <label for="reregpassword">Gentaste Adgangskode</label>
-                    <input type="password" id="reregpassword" placeholder="Eks. anne123" title="Gentast venligts din adgangskode" autocomplete="off" required>
+                    <input type="password" id="reregpassword" placeholder="Eks. anne123"
+                        title="Gentast venligts din adgangskode" autocomplete="off" required>
                     <p id="registreerror"></p>
                     <input class="btn" type="submit" value="Opret">
 
@@ -178,74 +178,100 @@
             </div>
 
         </div>
- <div class="wrapper-buttons">
-        <div class="buttons">
-            <button id="nyeste" class="categories">Nyeste</button>
-            <button id="pops" class="categories">Populære</button>
-            <button id="anbefalet" class="categories">Anbefalet</button>
-            <img id="searchicon" src="images/Search_light.png" alt="Søgeikon">
-        </div>
-    </div>
+        <!-- <div class="wrapper-buttons"> -->
+            <div class="buttons">
+                <button id="nyeste" class="categories">Nyeste</button>
+                <button id="pops" class="categories">Populære</button>
+                <button id="anbefalet" class="categories">Anbefalet</button>
+                <div></div>
+                <i class="fa fa-search" id="searchbtn"></i>
+                <!-- <img class="fa-search" id="searchbtn" src="images/Search_light.png" alt="Søgeikon"> -->
+            </div>
+        <!-- </div> -->
+        <div class="formfilter">
+            <form class="filter" id="filter">
+                <label for="type">type</label>
+                <select id="type" name="type">
+                    <option value="Heakling">Hækling</option>
+                    <option value="Strikning">Strikning</option>
+                </select>
+                <label for="niveau">niveau</label>
+                <select id="niveau" name="niveau">
+                    <option value="begynder">Begynder</option>
+                    <option value="trenede">Trænede</option>
+                    <option value="expert">Expert</option>
+                </select>
+                <label for="kon">Køn</label>
+                <select id="kon" name="kon">
+                    <option value="mand">Mand</option>
+                    <option value="kvinde">kvinde</option>
+                </select>
+                <input type="submit" value="Submit">
+            </form>
 
-    <main id="main" class="wrapper-main">
-        <div id="billede1">
-            <p class="tekst">Strikning</p>
-            <img class="billeder" src="images/9089d08ed06f4654b4d20339ae12fa4e.jpg" alt="Strikkede strømper">
-        </div>
-        <div id="billede2">
-            <p class="tekst">Hækling</p>
-            <img class="billeder" src="images/haeklet-bamsebjorn-e-opskrift.jpg" alt="Hæklede bamser">
-        </div>
-        <div id="billede3">
-            <p class="tekst">Strikning</p>
-            <img class="billeder" src="images/Image_23.jpg" alt="Strikket Poncho">
-        </div>
-        <div id="billede4">
-            <p class="tekst">Hækling</p>
-            <img class="billeder" src="images/the-toft-alpaca-shop-edwards-menageri-kanin-h_kle-opskrift-dansk-copyright-mikkla-dk_2.jpg" alt="Hæklet bamse">
-        </div>
-        <div id="billede5">
-            <p class="tekst">Hækling</p>
-            <img class="billeder" src="images/images.jpg" alt="Trøstedyr med klud">
-        </div>
-        <div id="billede6">
-            <p class="tekst">Strikning</p>
-            <img class="billeder" src="images/images1.jpg" alt="Strikket pude">
-        </div>
-        <div id="billede7">
-            <p class="tekst">Strikning</p>
-            <img class="billeder" src="images/Sunday-sweater-petiteknit-front-p.jpg" alt="Strikket sweater">
-        </div>
-        <div id="billede8">
-            <p class="tekst">Strikning</p>
-            <img class="billeder" src="images/LS_produkt_detaljebil_lang_Sno1_2.jpg" alt="Strikket hue">
-        </div>
-        <div id="billede9">
-            <p class="tekst">Strikning</p>
-            <img class="billeder" src="images/sunday-suit-petiteknit-opskrift-p.jpg" alt="Strikket babysuit">
-        </div>
-    </main>
-
-    <footer>
-        <div>
-            <h3>Kontakt os</h3>
-            <p>Erhvervsakademi Aarhus <br>
-                Sønderhøj 30, 8260 Viby J <br>
-                Telefon: 7228 6040 <br>
-                Mail: eaa-bibliotek@eaaa.dk
-            </p>
         </div>
 
-        <div>
-            <p>CVR:
-                31677971 <br>
-                EAN:
-                5798000560307</p>
-        </div>
-        <div>
-            <a href="https://www.eaaa.dk/cookies-og-persondata-pa-eaaa-dk/">Cookies og persondata på eaaa.dk</a>
-        </div>
-    </footer>
+        <main id="main" class="wrapper-main">
+            <div id="billede1">
+                <p class="tekst">Strikning</p>
+                <img class="billeder" src="images/9089d08ed06f4654b4d20339ae12fa4e.jpg" alt="Strikkede strømper">
+            </div>
+            <div id="billede2">
+                <p class="tekst">Hækling</p>
+                <img class="billeder" src="images/haeklet-bamsebjorn-e-opskrift.jpg" alt="Hæklede bamser">
+            </div>
+            <div id="billede3">
+                <p class="tekst">Strikning</p>
+                <img class="billeder" src="images/Image_23.jpg" alt="Strikket Poncho">
+            </div>
+            <div id="billede4">
+                <p class="tekst">Hækling</p>
+                <img class="billeder"
+                    src="images/the-toft-alpaca-shop-edwards-menageri-kanin-h_kle-opskrift-dansk-copyright-mikkla-dk_2.jpg"
+                    alt="Hæklet bamse">
+            </div>
+            <div id="billede5">
+                <p class="tekst">Hækling</p>
+                <img class="billeder" src="images/images.jpg" alt="Trøstedyr med klud">
+            </div>
+            <div id="billede6">
+                <p class="tekst">Strikning</p>
+                <img class="billeder" src="images/images1.jpg" alt="Strikket pude">
+            </div>
+            <div id="billede7">
+                <p class="tekst">Strikning</p>
+                <img class="billeder" src="images/Sunday-sweater-petiteknit-front-p.jpg" alt="Strikket sweater">
+            </div>
+            <div id="billede8">
+                <p class="tekst">Strikning</p>
+                <img class="billeder" src="images/LS_produkt_detaljebil_lang_Sno1_2.jpg" alt="Strikket hue">
+            </div>
+            <div id="billede9">
+                <p class="tekst">Strikning</p>
+                <img class="billeder" src="images/sunday-suit-petiteknit-opskrift-p.jpg" alt="Strikket babysuit">
+            </div>
+        </main>
+
+        <footer>
+            <div>
+                <h3>Kontakt os</h3>
+                <p>Erhvervsakademi Aarhus <br>
+                    Sønderhøj 30, 8260 Viby J <br>
+                    Telefon: 7228 6040 <br>
+                    Mail: eaa-bibliotek@eaaa.dk
+                </p>
+            </div>
+
+            <div>
+                <p>CVR:
+                    31677971 <br>
+                    EAN:
+                    5798000560307</p>
+            </div>
+            <div>
+                <a href="https://www.eaaa.dk/cookies-og-persondata-pa-eaaa-dk/">Cookies og persondata på eaaa.dk</a>
+            </div>
+        </footer>
 
 
 
@@ -263,4 +289,6 @@
     <script src="js/header.js"></script>
     <script src="js/login.js"></script>
     <script src="js/forside.js"></script>
-</body></html>
+</body>
+
+</html>
