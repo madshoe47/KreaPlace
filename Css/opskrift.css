@@ -8,6 +8,7 @@
     --dark-purple: #6D1770;
     --border-color: #707070;
     --edge: gray;
+    --footer: #9EABB4;
 }
 
 html {
@@ -21,6 +22,7 @@ html {
     font-family: 'Lato', sans-serif;
 }
 
+/* OPskrift Sektion */
 .opskrift  {
     background-color: var(--light-gray);
     width: auto;
@@ -80,6 +82,96 @@ html {
     margin: 1rem 0;
 }
 
+
+/* Kommentar section */
 .comments {
-    width: 60%;
+    width: 40%;
+    margin: 0 auto;
 }
+
+.comments img,
+.person img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.current-comment, .person {
+    display: flex;
+}
+
+.current-comment form, .person img{
+    margin: 0 1em;
+}
+
+.current-comment textarea{
+    background-color: var(--light-gray);
+    border: none;
+    padding: 1em;
+}
+.current-comment input[type="submit"] {
+    display: block;
+    color: var(--white);
+    background-color: var(--light-purple) !important;
+    border: none;
+    margin: .5em 0;
+    font-size: 1.1rem;
+    padding: .4rem 2rem;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.sendt {
+    color: gray;
+    font-weight: normal;
+    font-size: .8em;
+}
+
+.people {
+    margin: 3em;
+}
+
+.person {
+    margin: 2em;
+}
+
+/* Relateret opskrift */
+.relateret {
+
+}
+
+.relateret h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 6rem 0 2rem 0;
+}
+
+.images-swich {
+    display: flex;
+    justify-content: center;
+}
+
+.images-swich img {
+    max-width: 200px;
+    margin-left: 1em;
+}
+
+footer {
+    background-color: var(--footer);
+    margin-top: 7rem;
+    padding: 3em 5em 5em 5em;
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+}
+
+.om-os, .information, .konto {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.om-os a, .information a, .konto a {
+    margin: 2px 0;
+}
+
