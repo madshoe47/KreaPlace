@@ -204,7 +204,6 @@ p {
     display: flex;
     justify-content: center;
     margin-top: 5%;
-    height: 200px;
 }
 
 #picoverhead {
@@ -313,7 +312,7 @@ footer {
     padding: 20px 20px;
     background-color: #9EABB4;
     color: white;
-    margin-top: 550px;
+    margin-top: 150px;
     font-family: sans-serif;
 }
 
