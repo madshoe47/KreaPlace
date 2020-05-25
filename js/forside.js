@@ -119,6 +119,7 @@ document.getElementById('anbefalet').addEventListener('click', function () {
 
 // // Filter appere
 const filter = document.getElementById('filter')
+const formfilter = document.getElementById('formfilter')
 const search = document.getElementById('searchbtn')
 let showFilter = false
 
@@ -133,10 +134,16 @@ search.addEventListener('mouseleave', function() {
 search.onclick = function() {
     showFilter = !showFilter
     if (showFilter) {
+    formfilter.style.display = "block"
     search.style.clipPath = "circle(100.0% at 50% 50%)"
-     filter.style.clipPath = "circle(120.0% at 55% 0%)"
+    //  filter.style.clipPath = "circle(120.0% at 55% 0%)"
+     formfilter.style.clipPath = "circle(100.0% at 50% 50%)"
+     formfilter.style.transform = "initial"
  } else {
     search.style.clipPath = "circle(50.0% at 50% 50%)"
-    filter.style.clipPath = "circle(00.0% at 55% 0%)"
+    // filter.style.clipPath = "circle(00.0% at 55% 0%)"
+    formfilter.style.clipPath = "circle(00.0% at 60% 50%)"
+    formfilter.style.transform = "translateY(-100px)"
+    // formfilter.style.display = "none"
  }
 }

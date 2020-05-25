@@ -8,7 +8,8 @@
     padding: .5em;
     transition: clip-path 1s;
     clip-path: circle(50.0% at 50% 50%);
-    background-color: #C46C9A;
+    background: #C46C9A;
+   
     /* width: 35px;
     height: 35px; */
 }
@@ -23,16 +24,19 @@
     width: 100%;
     padding: 1em 0;
     margin: 0 auto;
+    transition: clip-path .3s, transform 1s;
+    clip-path: circle(0% at 50% 50%);
+    transform: translateY(-100px);
+    z-index: -1;
+    position: relative;
+    display: none;
 }
+
 
 .filter {
     padding: 1em;
     display: block;
     min-width: 400px;
-    clip-path: circle(0.0% at 80% 0%);
-    transition: clip-path 1.2s ease-in-out;
-    /* height: 19px; */
-    /* transition: transform 2s; */
     margin: 0 50%;
     transform: translate(-50%, 0);
 }
