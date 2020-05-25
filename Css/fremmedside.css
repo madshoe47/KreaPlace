@@ -134,7 +134,7 @@ p {
 #picoverhead {
     width: 60%;
     display: grid;
-    grid-gap: 5%;
+    grid-gap: 20px;
     grid-template-columns: repeat(3, 30%);
     grid-template-rows: repeat(3, auto);
 }

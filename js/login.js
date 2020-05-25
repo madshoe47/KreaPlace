@@ -4,11 +4,18 @@ const registereform = document.getElementById('registreform')
 
 loginform.addEventListener('submit', logon)
 registereform.addEventListener('submit', registere)
+console.log('Session loged in:',sessionStorage.getItem('logedIn'));
 
-sessionStorage.setItem('logedIn', 'false')
+if (localStorage.getItem('user') && sessionStorage.getItem('logedIn') === 'true') {
+    console.log(localStorage.getItem('user'));
+    showAvatar()
+    
+}
+
 
 function registere(e) {
     e.preventDefault()
+    sessionStorage.setItem('logedIn', 'false')
     let errorMsg = document.getElementById('registreerror')
     errorMsg.style.color = 'red'
     // Create user login, with localStorage
@@ -33,14 +40,12 @@ function registere(e) {
        } else {
            errorMsg.textContent = ''
         //    Everything is good
-           localStorage.setItem('username', username)
-           localStorage.setItem('email', email)
-           localStorage.setItem('password', password)
+        localStorage.setItem('user', `{"username": "${username}","password": "${password}","email": "${email}"}`)
 
            errorMsg.style.color = 'darkgreen'
            errorMsg.textContent = 'Du er nu registreret'
            setTimeout(function() {
-            window.location = window.location.search = `?username=${username}&email=${email}&password=${password}`;
+            window.location = window.location.search = `?username=${username}&email=${email}&password=${password}`
            }, 1000)
        }
     }
@@ -53,19 +58,24 @@ function logon(e) {
     // Create user login, with localStorage
     const email = document.getElementById('email').value
     const password = document.getElementById('password').value
-
-    if (email !== localStorage.getItem('email') && email !== localStorage.getItem('username') ) {
-        errorMsg.textContent = 'Forkert Email eller Brugernavn'
-    } else if (password !== localStorage.getItem('password')) {
-        errorMsg.textContent = 'Forkert Password'
+    const user = JSON.parse(localStorage.getItem('user'))
+    if (!user) {
+        errorMsg.textContent = 'Bruger eksistere ikke'
     } else {
-        sessionStorage.setItem('logedIn', 'true')
-        errorMsg.style.color = 'green'
-        errorMsg.textContent = `Du er logget ind som ${localStorage.getItem('username')}`
-        removeModal()
-        showAvatar()
-        // window.location = window.location.search = "?user=annemikkelsen";
+        if (email !== user.email && email !== user.username ) {
+            errorMsg.textContent = 'Forkert Email eller Brugernavn'
+        } else if (password !== user.password) {
+            errorMsg.textContent = 'Forkert Password'
+        } else {
+            sessionStorage.setItem('logedIn', 'true')
+            errorMsg.style.color = 'green'
+            errorMsg.textContent = `Du er logget ind som ${user.username}`
+            removeModal()
+            showAvatar()
+            // window.location = window.location.search = "?user=annemikkelsen";
+        }
     }
+    
 }
 
 // Login avatar

@@ -106,15 +106,12 @@
     grid-area: 2/2/3/3;
 }
 
-#soge {
-    font-family: sans-serif;
-    font-size: 12px;
-}
-
 #sog {
     width: 195%;
     border-radius: 5px;
     background-color: #F3F3F3;
+    padding: 5px;
+    border: none;
 }
 
 .formfilter {
