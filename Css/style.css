@@ -80,7 +80,7 @@
 
 
 #searchicon {
-    
+
     /* margin: 0px 0px 0px 15px; */
 }
 
@@ -177,19 +177,23 @@
 /*--------------- FOOTER ----------------*/
 
 footer {
-
-    left: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px 20px;
-    background-color: #9EABB4;
-    color: white;
-    margin-top: 200px;
-    font-family: sans-serif;
+    background-color: var(--footer);
+    margin-top: 7rem;
+    padding: 3em 5em 5em 5em;
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
 }
 
-footer a {
-    color: #000;
+.om-os,
+.information,
+.konto {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.om-os a,
+.information a,
+.konto a {
+    margin: 2px 0;
 }
