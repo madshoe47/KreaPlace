@@ -4,6 +4,19 @@ p {
     margin: 0;
 }
 
+:root {
+    --light-gray: #F3F3F3;
+    --pink: #F1ABCA;
+    --gray: #F3F3F3;
+    --white: white;
+    --pink: #F1ABCA;
+    --light-purple: #C46C9A;
+    --dark-purple: #6D1770;
+    --border-color: #707070;
+    --edge: gray;
+    --footer: #9EABB4;
+}
+
 
 
 #wrapper-mysite {
