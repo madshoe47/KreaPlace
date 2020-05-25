@@ -181,6 +181,7 @@
     top: 22%;
     right: 2%;
     transform: rotate(180deg);
+    z-index: 100;
 }
 
 #overskrift {
