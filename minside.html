@@ -5,125 +5,277 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KreaPlace</title>
+    <link rel="stylesheet" href="Css/main.css">
+    <link rel="stylesheet" href="Css/header.css">
     <link rel="stylesheet" href="Css/minside.css">
 </head>
 
 <body>
 
-    <main id="wrapper-mysite">
-        <div id="profilinfo">
-            <h2 id="nametag">Anna Mikkelsen</h2>
-            <img id="profilbillede-mysite" src="images/profil1.jpg" alt="Profilbillede">
-            <div id="changing">
-                <button class="profilebts" id="rediger">Rediger</button>
-                <button class="profilebts" id="stats">Statistik</button>
+    <div class="wrapper">
+        <header id="mobil-header">
+            <img class="logo" src="images/logo_lyserd.png" alt="Kreaplace Logo">
+            <div>
+                <i id="mobil-nav-btn" class="fas fa-bars"></i>
+                <nav id="mobil-nav">
+                    <div class="profil">
+                        <button id="mobil-loginbtn" class="btn" data-mobil>Login</button>
+                        <div class="profilstatus">
+                            <img src="images/profil.jpg" alt="Anna Profil billede">
+                            <button class="btn">Nyt Opslag</button>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li class="menu-active"><a href="/index.html">Udforsk</a></li>
+                        <li id="mobil-dropdown-btn" class="connect-dropdown" data-mobil>
+                            <a href="#">Opskrifter <span class="menu-dropdown"></span></a>
+                        </li>
+                        <li class="onlyLogin"><a href="/minside.html">Min side</a></li>
+                        <li><a href="/forum.html">Forum</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div id="brugerinfocontainer">
-                <div class="brugerinfo">
-                    <p class="hvilkendata">Følger:</p>
-                    <p class="hvormangedata">21</p>
-                </div>
-                <div class="brugerinfo">
-                    <p class="hvilkendata">Følgere:</p>
-                    <p class="hvormangedata">2.176</p>
-                </div>
-                <div class="brugerinfo">
-                    <p class="hvilkendata">Opslag:</p>
-                    <p class="hvormangedata">271</p>
+        </header>
+        <header id="desktop-header">
+            <img class="logo" src="images/logo_lyserd.png" alt="Kreaplace Logo">
+            <nav>
+                <ul>
+                    <li class="menu-active"><a href="/index.html">Udforsk</a></li>
+                    <li id="dropdown-btn" class="connect-dropdown">
+                        <a href="#">Opskrifter <span class="menu-dropdown"></span></a>
+                    </li>
+                    <li class="onlyLogin"><a href="/minside.html">Min side</a></li>
+                    <li><a href="/forum.html">Forum</a></li>
+                </ul>
+            </nav>
+
+            <div class="profil">
+                <button id="loginbtn" class="btn">Login</button>
+                <div class="profilstatus">
+                    <img src="images/profil.jpg" alt="Anna Profil billede">
+                    <button class="btn">Nyt Opslag</button>
                 </div>
             </div>
 
-            <div id="ommigsektion">
-                <h3>Om mig:</h3>
-                <p id="tekstommig">Jeg hedder Anna og jeg er 24år. <br>Lorem ipsum, or lipsum as it is sometimes known,Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for </p>
+        </header>
+
+        <div id="dropdownMenu" class="dropdown-menu">
+            <div class="menu-grid">
+                <h2>Gratis Opskrifter</h2>
+                <ul>
+                    <li><a href="#">Damer</a></li>
+                    <li><a href="#">Fodtøj</a> </li>
+                    <li><a href="#">Børn</a></li>
+                    <li><a href="#">Interiør</a></li>
+                    <li><a href="#">Poncho & Sjal</a></li>
+                    <li><a href="#">Højtider & Mærkedage</a></li>
+                    <li><a href="#">Dyr & Legetøj</a></li>
+                    <li><a href="#">Tasker</a></li>
+                    <li><a href="#">Kæledyr</a></li>
+                </ul>
+            </div>
+            <div class="menu-grid">
+                <h2>Betalte Opskrifter</h2>
+                <ul>
+                    <li><a href="#">Damer</a></li>
+                    <li><a href="#">Fodtøj</a> </li>
+                    <li><a href="#">Børn</a></li>
+                    <li><a href="#">Interiør</a></li>
+                    <li><a href="#">Poncho & Sjal</a></li>
+                    <li><a href="#">Højtider & Mærkedage</a></li>
+                    <li><a href="#">Dyr & Legetøj</a></li>
+                    <li><a href="#">Tasker</a></li>
+                    <li><a href="#">Kæledyr</a></li>
+                </ul>
+            </div>
+            <div class="menu-grid">
+                <h2>Betalte Mærker</h2>
+                <ul>
+                    <li><a href="#">Holme</a> </li>
+                    <li><a href="#">LillteHappyCrochet</a> </li>
+                    <li><a href="#">KniteByTrineP</a> </li>
+                    <li><a href="#">Rico</a></li>
+                    <li><a href="#">Oj Hæklerier</a></li>
+                    <li><a href="#">ByCVig</a></li>
+                    <li><a href="#">BC GARN</a></li>
+                    <li><a href="#">Du Store Apakka</a></li>
+                    <li><a href="#">Strikkeopskrifter</a> </li>
+                    <li><a href="#">Hækleopskrifter</a> </li>
+                </ul>
+            </div>
+            <div class="menu-grid">
+                <h2>Mærker</h2>
+                <ul>
+                    <li><a href="#">DROPS</a></li>
+                    <li><a href="#">MayFlower</a></li>
+                    <li><a href="#">Dale Garn</a></li>
+                    <li><a href="#">Go Handmade</a></li>
+                    <li><a href="#">Monos Del Urguay</a> </li>
+                    <li><a href="#">Jârbo</a></li>
+                    <li><a href="#">Istex</a></li>
+                </ul>
+            </div>
+            <div class="menu-grid">
+                <h2>Årstider</h2>
+                <ul>
+                    <li><a href="#">Forår</a></li>
+                    <li><a href="#">Sommer</a></li>
+                    <li><a href="#">Efterår</a></li>
+                    <li><a href="#">Vinter</a></li>
+                </ul>
             </div>
         </div>
-    </main>
 
-    <div id="barwrap">
-        <div id="baroverhead">
-            <div id="barparts1"></div>
-            <div id="barparts2"></div>
-            <div id="barparts3"></div>
+        <div id="blur" class="blur"></div>
+
+        <div id="loginmodal" class="modal">
+
+            <div class="login">
+                <img class="logo" src="images/logo_lyserd.png" alt="Kreaplace Logo">
+                <form id="loginform">
+                    <label for="email">Brugernavn eller E-mail</label>
+                    <input type="text" id="email" placeholder="Eks. kreaplace@krea.nu" required>
+                    <label for="password">Adgangskode</label>
+                    <input type="password" id="password" placeholder="Eks. H3B8pIT3Nsk3" autocomplete="off" required>
+                    <p id="loginerror"></p>
+                    <input class="btn" type="submit" value="Login">
+                </form>
+                <p class="eller">ELLER</p>
+                <hr>
+                <button id="facebook-btn">Log in Med Facebook</button>
+            </div>
+            <hr>
+            <p class="registrep">Har du ikke en Konto? <span><Button id="opret">Opret Profil</Button></span></p>
+
         </div>
+
+        <div id="registremodal" class="modal">
+
+            <div class="registre">
+                <img class="logo" src="images/logo_lyserd.png" alt="Kreaplace Logo">
+                <form id="registreform">
+                    <label for="regusername">Brugernavn</label>
+                    <input type="text" id="regusername" placeholder="Eks. Anne Mikkelsen" title="Dit Navn" required>
+                    <label for="regemail">E-mail</label>
+                    <input type="email" id="regemail" placeholder="Eks. anne-mikkelsen@gmail.com" title="Din Email"
+                        required>
+                    <label for="regpassword">Adgangskode</label>
+                    <input type="password" id="regpassword" placeholder="Eks. anne123" title="Din Adgangskode"
+                        autocomplete="off" required>
+                    <label for="reregpassword">Gentaste Adgangskode</label>
+                    <input type="password" id="reregpassword" placeholder="Eks. anne123"
+                        title="Gentast venligts din adgangskode" autocomplete="off" required>
+                    <p id="registreerror"></p>
+                    <input class="btn" type="submit" value="Opret">
+                </form>
+                <hr>
+                <button class="btn changetologin" id="skiftlogin">Login</button>
+            </div>
+        </div>
+        <main id="wrapper-mysite">
+            <div id="profilinfo">
+                <h2 id="nametag">Anna Mikkelsen</h2>
+                <img id="profilbillede-mysite" src="images/profil1.jpg" alt="Profilbillede">
+                <div id="changing">
+                    <button class="profilebts" id="rediger">Rediger</button>
+                    <button class="profilebts" id="stats">Statistik</button>
+                </div>
+                <div id="brugerinfocontainer">
+                        <p class="brugerinfo">Følger: 21</p>
+                        <p class="brugerinfo">Følgere: 2.176</p>
+                        <p class="brugerinfo">Opslag: 271</p>
+
+                </div>
+    
+                <div id="ommigsektion">
+                    <h3>Om mig:</h3>
+                    <p id="tekstommig">Jeg hedder Anna, er født i 1982 og bosiddende i Vejle i Sydjylland sammen med min kæreste Morten og vores hund </p>
+                </div>
+            </div>
+        </main>
+    
+        <div id="barwrap">
+            <div id="baroverhead">
+                <div id="barparts1"></div>
+                <div id="barparts2"></div>
+                <div id="barparts3"></div>
+            </div>
+        </div>
+    
+        <div id="textwrap">
+            <div id="textoverhead">
+                <h3 id="text1">Dine opslag</h3>
+                <h3 id="text2">Gemte opslag</h3>
+                <h3 id="text3">Synes godt om</h3>
+            </div>
+        </div>
+    
+    
+        <div id="picwrap">
+            <div id="picoverhead">
+                <div id="billede1">
+                    <p class="tekst">Strikning</p>
+                    <img class="billeder" src="images/sokkker.jpg" alt="Strikkede strømper">
+                </div>
+                <div id="billede2">
+                    <p class="tekst">Hækling</p>
+                    <img class="billeder" src="images/bamsebjorn.jpg" alt="Hæklede bamser">
+                </div>
+                <div id="billede3">
+                    <p class="tekst">Strikning</p>
+                    <img class="billeder" src="images/poncho.jpg" alt="Strikket Poncho">
+                </div>
+                <div id="billede4">
+                    <p class="tekst">Hækling</p>
+                    <img class="billeder" src="images/bamse.jpg" alt="Hæklet bamse">
+                </div>
+                <div id="billede5">
+                    <p class="tekst">Hækling</p>
+                    <img class="billeder" src="images/trostedyr.jpg" alt="Trøstedyr med klud">
+                </div>
+                <div id="billede6">
+                    <p class="tekst">Strikning</p>
+                    <img class="billeder" src="images/pude.jpg" alt="Strikket pude">
+                </div>
+                <div id="billede7">
+                    <p class="tekst">Strikning</p>
+                    <img class="billeder" src="images/sweater.jpg" alt="Strikket sweater">
+                </div>
+                <div id="billede8">
+                    <p class="tekst">Strikning</p>
+                    <img class="billeder" src="images/hue.jpg" alt="Strikket hue">
+                </div>
+                <div id="billede9">
+                    <p class="tekst">Strikning</p>
+                    <img class="billeder" src="images/babydragt.jpg" alt="Strikket babysuit">
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="om-os">
+                <h3>Om os</h3>
+                <p>Kreaplace er stedet for inspiration for kreative sjæle i strik og hækling</p>
+            </div>
+            <div class="information">
+                <h3>Information</h3>
+                <a href="#">Ofte stillede sprøgsmål</a>
+                <a href="#">Fragt og levering</a>
+                <a href="#">Rapportere problem</a>
+                <a href="#">Cookies og Rettigheder</a>
+            </div>
+            <div class="konto">
+                <h3>Konto</h3>
+                <a href="#">Min konto</a>
+                <a href="#">Favoritter</a>
+                <a href="#">Ordrehistorik</a>
+                <a href="#">Nyhedsbrev</a>
+            </div>
+        </footer>
     </div>
 
-    <div id="textwrap">
-        <div id="textoverhead">
-            <h3 id="text1">Dine opslag</h3>
-            <h3 id="text2">Gemte opslag</h3>
-            <h3 id="text3">Synes godt om</h3>
-        </div>
-    </div>
 
-
-    <div id="picwrap">
-        <div id="picoverhead">
-            <div id="billede1">
-                <p class="tekst">Strikning</p>
-                <img class="billeder" src="images/sokkker.jpg" alt="Strikkede strømper">
-            </div>
-            <div id="billede2">
-                <p class="tekst">Hækling</p>
-                <img class="billeder" src="images/bamsebjorn.jpg" alt="Hæklede bamser">
-            </div>
-            <div id="billede3">
-                <p class="tekst">Strikning</p>
-                <img class="billeder" src="images/poncho.jpg" alt="Strikket Poncho">
-            </div>
-            <div id="billede4">
-                <p class="tekst">Hækling</p>
-                <img class="billeder" src="images/bamse.jpg" alt="Hæklet bamse">
-            </div>
-            <div id="billede5">
-                <p class="tekst">Hækling</p>
-                <img class="billeder" src="images/trostedyr.jpg" alt="Trøstedyr med klud">
-            </div>
-            <div id="billede6">
-                <p class="tekst">Strikning</p>
-                <img class="billeder" src="images/pude.jpg" alt="Strikket pude">
-            </div>
-            <div id="billede7">
-                <p class="tekst">Strikning</p>
-                <img class="billeder" src="images/sweater.jpg" alt="Strikket sweater">
-            </div>
-            <div id="billede8">
-                <p class="tekst">Strikning</p>
-                <img class="billeder" src="images/hue.jpg" alt="Strikket hue">
-            </div>
-            <div id="billede9">
-                <p class="tekst">Strikning</p>
-                <img class="billeder" src="images/babydragt.jpg" alt="Strikket babysuit">
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-    <footer>
-        <div>
-            <h3>Kontakt os</h3>
-            <p>Erhvervsakademi Aarhus <br>
-                Sønderhøj 30, 8260 Viby J <br>
-                Telefon: 7228 6040 <br>
-                Mail: eaa-bibliotek@eaaa.dk
-            </p>
-        </div>
-
-        <div>
-            <p>CVR:
-                31677971 <br>
-                EAN:
-                5798000560307</p>
-        </div>
-        <div>
-            <a href="https://www.eaaa.dk/cookies-og-persondata-pa-eaaa-dk/">Cookies og persondata på eaaa.dk</a>
-        </div>
-    </footer>
-
-
-    <script src="JavaScript/minside.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/minside.js"></script>
 </body></html>

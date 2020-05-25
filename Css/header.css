@@ -22,10 +22,6 @@ body {
     font-family: 'Lato', sans-serif;
     /* font-size: 0.825rem; */
 }
-.wrapper {
-    max-width: 1920px;
-    margin: 0 auto;
-}
 
 /* ---------------------------
 ------ Mobil Navigation ------
@@ -91,10 +87,6 @@ header {
     align-items: center;
 }
 
-a {
-    /* reset Anger Tags (Links) */
-    text-decoration: none;
-}
 
 header nav a {
     text-decoration: none;
@@ -207,9 +199,8 @@ header a:focus {
 }
 
 header a:visited {
-    color: var(--light-purple);
+    color: black;
 }
-
 
 /* 
 ---------------------------

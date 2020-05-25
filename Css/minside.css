@@ -6,7 +6,7 @@ p {
 
 
 
-#wrapper-mysite {
+main {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -62,19 +62,22 @@ p {
 
 #brugerinfocontainer {
     grid-area: 2/2/3/7;
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
+    margin-left: 30px;
+    /* display: flex; */
+
 }
 
 .brugerinfo {
     margin-top: 2%;
+    margin-left: 20px;
     background-color: #F3F3F3;
-    border: rgba(0, 0, 0, 0.5);
     padding: 8px;
     border-radius: 10px;
-    display: flex;
     max-height: 20%;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline;
 }
 
 
@@ -174,7 +177,6 @@ p {
     color: #B94B85;
     font-size: 14px;
     position: absolute;
-    top: -5px;
     left: 10%;
 }
 
@@ -183,7 +185,6 @@ p {
     color: #8B8B8B;
     font-size: 14px;
     position: absolute;
-    top: -5px;
     left: 44%;
 
 
@@ -194,7 +195,6 @@ p {
     color: #8B8B8B;
     font-size: 14px;
     position: absolute;
-    top: -5px;
     left: 76%;
 }
 
@@ -209,7 +209,7 @@ p {
 #picoverhead {
     width: 60%;
     display: grid;
-    grid-gap: 5%;
+    grid-gap: 20px;
     grid-template-columns: repeat(3, 30%);
     grid-template-rows: repeat(3, auto);
 }
@@ -293,29 +293,4 @@ p {
     width: 100%;
     grid-area: 3 / 1 / 4 / 2;
     position: relative;
-}
-
-
-
-
-
-
-/*--------------- FOOTER ----------------*/
-
-footer {
-
-    left: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px 20px;
-    background-color: #9EABB4;
-    color: white;
-    margin-top: 150px;
-    font-family: sans-serif;
-}
-
-footer a {
-    color: #000;
 }

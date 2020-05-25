@@ -10,7 +10,7 @@ document.getElementById('pops').addEventListener('click', function () {
 </div>
 <div id="billede7">
     <p class="tekst">Strikning</p>
-    <img class="billeder" src="images/Image_23.jpg" alt="Strikket Poncho">
+    <img class="billeder" src="images/poncho.jpg" alt="Strikket Poncho">
 </div>
 <div id="billede1">
     <p class="tekst">Hækling</p>
@@ -49,7 +49,7 @@ document.getElementById('nyeste').addEventListener('click', function () {
 </div>
 <div id="billede3">
     <p class="tekst">Strikning</p>
-    <img class="billeder" src="images/Image_23.jpg" alt="Strikket Poncho">
+    <img class="billeder" src="images/poncho.jpg" alt="Strikket Poncho">
 </div>
 <div id="billede4">
     <p class="tekst">Hækling</p>
@@ -88,7 +88,7 @@ document.getElementById('anbefalet').addEventListener('click', function () {
 </div>
 <div id="billede3">
     <p class="tekst">Strikning</p>
-    <img class="billeder" src="images/Image_23.jpg" alt="Strikket Poncho">
+    <img class="billeder" src="images/poncho.jpg" alt="Strikket Poncho">
 </div>
 <div id="billede2">
     <p class="tekst">Hækling</p>

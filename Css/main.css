@@ -1,0 +1,69 @@
+:root {
+    --light-gray: #F3F3F3;
+    --gray: #F3F3F3;
+    --pink: #F1ABCA;
+    --white: white;
+    --light-purple: #C46C9A;
+    --dark-purple: #6D1770;
+    --border-color: #707070;
+    --edge: gray;
+    --footer: #9EABB4;
+}
+
+html {
+    font-size: 0.825rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+a {
+    /* reset Anger Tags (Links) */
+    text-decoration: none;
+    color: var(--dark-purple)
+}
+
+
+a:active,
+a:focus {
+    color: var(--light-purple);
+}
+
+a:visited {
+    color: var(--dark-purple);
+}
+/* Hover states */
+a:hover {
+    color: var(--pink) !important;
+}
+
+footer {
+    background-color: var(--footer);
+    margin-top: 7rem;
+    padding: 3em 5em 5em 5em;
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+}
+
+footer a {
+    color: black;
+}
+
+.om-os, .information, .konto {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.om-os a, .information a, .konto a {
+    margin: 2px 0;
+}
