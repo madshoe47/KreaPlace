@@ -12,10 +12,11 @@ function enableDropdownMenu(e) {
 
     if (menuEnabelt) {
         menu.style.display = 'block'
-
+        pil.style.transform = 'rotate(180deg)'
 
     } else {
         menu.style.display = 'none'
         pil.style.transform = 'rotate(0deg)'
     }
     menuEnabelt = !menuEnabelt
+}
