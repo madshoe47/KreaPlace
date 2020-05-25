@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d577d4a2e5.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="Css/main.css">
-    <link rel="stylesheet" href="Css/header.css">
-    <link href="css/opskrift.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link href="./css/opskrift.css" rel="stylesheet"/>
     <title>Opskrift - Poncho med mange farver</title>
 </head>
 
@@ -15,46 +15,48 @@
     <div class="wrapper">
         
         <header id="mobil-header">
-            <img class="logo" src="images/logo_lyserd.png" alt="Kreaplace Logo">
+            <img class="logo" src="./images/logo_lyserd.png" alt="Kreaplace Logo">
             <div>
                 <i id="mobil-nav-btn" class="fas fa-bars"></i>
                 <nav id="mobil-nav">
                     <div class="profil">
                         <button id="mobil-loginbtn" class="btn" data-mobil>Login</button>
                         <div class="profilstatus">
-                            <img src="images/profil.jpg" alt="Anna Profil billede">
+                            <img src="./images/profil.jpg" alt="Anna Profil billede">
                             <button class="btn">Nyt Opslag</button>
                         </div>
                     </div>
 
                     <ul>
-                        <li class="menu-active"><a href="/index.html">Udforsk</a></li>
+                        <li class="menu-active"><a href="./index.html">Udforsk</a></li>
                         <li id="mobil-dropdown-btn" class="connect-dropdown" data-mobil>
                             <a href="#">Opskrifter <span class="menu-dropdown"></span></a>
                         </li>
-                        <li class="onlyLogin"><a href="/minside.html">Min side</a></li>
-                        <li><a href="/forum.html">Forum</a></li>
+                        <li class="onlyLogin"><a href="./minside.html">Min side</a></li>
+                        <li><a href="./forum.html">Forum</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <header id="desktop-header">
-            <img class="logo" src="images/logo_lyserd.png" alt="Kreaplace Logo">
+            <img class="logo" src="./images/logo_lyserd.png" alt="Kreaplace Logo">
             <nav>
                 <ul>
-                    <li class="menu-active"><a href="/index.html">Udforsk</a></li>
+                    <li class="menu-active"><a href="./index.html">Udforsk</a></li>
                     <li id="dropdown-btn" class="connect-dropdown">
                         <a href="#">Opskrifter <span class="menu-dropdown"></span></a>
                     </li>
-                    <li class="onlyLogin"><a href="/minside.html">Min side</a></li>
-                    <li><a href="/forum.html">Forum</a></li>
+                    <li class="onlyLogin"><a href="./minside.html">Min side</a></li>
+                    <li><a href="./forum.html">Forum</a></li>
                 </ul>
             </nav>
 
             <div class="profil">
                 <button id="loginbtn" class="btn">Login</button>
                 <div class="profilstatus">
-                    <img src="images/profil.jpg" alt="Anna Profil billede">
+                    <a href="./minside.html">
+                        <img src="./images/profil.jpg" alt="Anna Profil billede">
+                    </a>
                     <button class="btn">Nyt Opslag</button>
                 </div>
             </div>
@@ -133,7 +135,7 @@
         <div id="loginmodal" class="modal">
 
             <div class="login">
-                <img class="logo" src="images/logo_lyserd.png" alt="Kreaplace Logo">
+                <img class="logo" src="./images/logo_lyserd.png" alt="Kreaplace Logo">
                 <form id="loginform">
                     <label for="email">Brugernavn eller E-mail</label>
                     <input type="text" id="email" placeholder="Eks. kreaplace@krea.nu" required>
@@ -154,7 +156,7 @@
         <div id="registremodal" class="modal">
 
             <div class="registre">
-                <img class="logo" src="images/logo_lyserd.png" alt="Kreaplace Logo">
+                <img class="logo" src="./images/logo_lyserd.png" alt="Kreaplace Logo">
                 <form id="registreform">
                     <label for="regusername">Brugernavn</label>
                     <input type="text" id="regusername" placeholder="Eks. Anne Mikkelsen" title="Dit Navn" required>
@@ -178,7 +180,7 @@
         <section class="opskrift">
             <div class="showcase">
                 <div class="billede">
-                    <img src="images/poncho.jpg" alt="poncho">
+                    <img src="./images/poncho.jpg" alt="poncho">
                     <p>Visninger: 1.232</p>
                     <p>221 <i class="fas fa-thumbs-up"></i></p>
                 </div>
@@ -193,7 +195,7 @@
             <div class="produkt-beskrivelse">
 
                 <h1>Poncho med mange farver</h1>
-                <p>Fra <a href="/Fremmedside.html">Anna Henriksen</a></p>
+                <p>Fra <a href="./Fremmedside.html">Anna Henriksen</a></p>
         
                 <div class="tekst">
                     <p>Strikket bluse med korte ærmer i DROPS Melody. Arbejdet strikkes ovenfra og ned med raglan. Størrelse XS - XXL.</p>
@@ -216,7 +218,7 @@
 
         <div class="comments">
             <div class="current-comment">
-                <img src="images/profil.jpg" alt="Profil billede">
+                <img src="./images/profil.jpg" alt="Profil billede">
                 <form>
                     <textarea name="message" rows="5" cols="60" placeholder="Skriv en kommentar"></textarea>
                     <input type="submit" value="Send">
@@ -224,21 +226,21 @@
             </div>
             <div class="people">
                 <div class="person">
-                    <img src="images/person1.jpg" alt="brugerprofil billede">
+                    <img src="./images/person1.jpg" alt="brugerprofil billede">
                     <div class="kommentar">
                         <h3>Kamilla Hørsholm <span class="sendt">2 dage siden</span></h3>
                         <p>Dejligt med en god poncho, lige hvad jeg ledte efter.</p>
                     </div>
                 </div>
                 <div class="person">
-                    <img src="images/person3.jpg" alt="brugerprofil billede">
+                    <img src="./images/person3.jpg" alt="brugerprofil billede">
                     <div class="kommentar">
                         <h3>Anita Sørnsen <span class="sendt">5 dage siden</span></h3>
                         <p>Super fedt design, den skal jeg prøve at lave.</p>
                     </div>
                 </div>
                 <div class="person">
-                    <img src="images/person2.jpg" alt="brugerprofil billede">
+                    <img src="./images/person2.jpg" alt="brugerprofil billede">
                     <div class="kommentar">
                         <h3>Anja Svensen <span class="sendt">6 dage siden</span></h3>
                         <p>Kan man godt lave den med Bambusgarn istedet? </p>
@@ -248,10 +250,10 @@
         </div>
         <div class="relateret">
             <h2>Relaterede opsrkifter</h2>
-            <div class="images-swich">
-                <img src="images/sokkker.jpg" alt="sokker">
-                <img src="images/haeklet-kurv.jpg" alt="Kurv">
-                <img src="images/haeklet-bamsebjorn-e-opskrift.jpg" alt="bamsebjorn">
+            <div class="./images-swich">
+                <img src="./images/sokkker.jpg" alt="sokker">
+                <img src="./images/haeklet-kurv.jpg" alt="Kurv">
+                <img src="./images/haeklet-bamsebjorn-e-opskrift.jpg" alt="bamsebjorn">
             </div>
         </div>
         <footer>

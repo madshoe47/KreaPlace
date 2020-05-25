@@ -2,7 +2,7 @@ const main = document.getElementById('main')
 document.getElementById('pops').addEventListener('click', function () {
     main.innerHTML = `<div id="billede2">
     <p class="tekst">Strikning</p>
-    <img class="billeder" src="images/9089d08ed06f4654b4d20339ae12fa4e.jpg" alt="Strikkede strømper">
+    <img class="billeder" src="images/sokker.jpg" alt="Strikkede strømper">
 </div>
 <div id="billede5">
     <p class="tekst">Hækling</p>
@@ -41,7 +41,7 @@ document.getElementById('pops').addEventListener('click', function () {
 document.getElementById('nyeste').addEventListener('click', function () {
     main.innerHTML = `<div id="billede1">
     <p class="tekst">Strikning</p>
-    <img class="billeder" src="images/9089d08ed06f4654b4d20339ae12fa4e.jpg" alt="Strikkede strømper">
+    <img class="billeder" src="images/sokker.jpg" alt="Strikkede strømper">
 </div>
 <div id="billede2">
     <p class="tekst">Hækling</p>
@@ -80,7 +80,7 @@ document.getElementById('nyeste').addEventListener('click', function () {
 document.getElementById('anbefalet').addEventListener('click', function () {
     main.innerHTML = `<div id="billede8">
     <p class="tekst">Strikning</p>
-    <img class="billeder" src="images/9089d08ed06f4654b4d20339ae12fa4e.jpg" alt="Strikkede strømper">
+    <img class="billeder" src="images/sokker.jpg" alt="Strikkede strømper">
 </div>
 <div id="billede9">
     <p class="tekst">Hækling</p>
