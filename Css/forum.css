@@ -1,0 +1,385 @@
+#headerwrap {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+#forumoverskrift {
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.mainwrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#background {
+    width: 75%;
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+}
+
+.style {
+    width: 40%;
+    background-color: #fff;
+    height: 150px;
+    border-radius: 10px;
+}
+
+#left {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(6, 16%);
+}
+
+#dininfo {
+    font-family: sans-serif;
+    font-size: 14px;
+    grid-area: 1/1/2/2;
+    margin-top: 6%;
+    margin-left: 10%;
+}
+
+#profilbillede {
+    border-radius: 50px;
+    grid-area: 2/1/7/2;
+    width: 50%;
+    margin-left: 12%;
+    margin-top: 7%;
+}
+
+#nametag {
+    grid-area: 2/2/3/3;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+#changes {
+    grid-area: 4/2/5/3;
+    font-size: 10px;
+    font-family: sans-serif;
+    font-weight: normal;
+    color: #C46C9A;
+}
+
+#bgc {
+    grid-area: 6/2/7/3;
+    width: 50%;
+    background-color: #C46C9A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+#new {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#right {
+    display: grid;
+    grid-template-columns: 10% 40% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+
+
+#sogiforum {
+    font-family: sans-serif;
+    font-size: 14px;
+    grid-area: 1/2/2/3;
+    margin-top: 9%;
+}
+
+#sogeord {
+    grid-area: 2/2/3/3;
+}
+
+#soge {
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+#sog {
+    width: 195%;
+    border-radius: 5px;
+    background-color: #F3F3F3;
+}
+
+.formfilter {
+    grid-area: 3/2/5/3;
+}
+
+
+
+
+#Kategori {
+    font-size: 12px;
+    font-family: sans-serif;
+    margin-top: 9%;
+    width: 75%;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+#Periode {
+    font-size: 12px;
+    font-family: sans-serif;
+    margin-top: 9%;
+    width: 75%;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+
+
+#bgc2 {
+    grid-area: 4/3/5/5;
+    width: 40%;
+    height: 55%;
+    background-color: #C46C9A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 4%;
+    margin-left: 40%;
+
+}
+
+#search {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#udfold {
+    position: relative;
+    background-color: #C46C9A;
+    width: 75%;
+    height: 50px;
+    margin-top: 2.5%;
+    border-radius: 10px;
+
+}
+
+#pilhvid {
+    position: absolute;
+    width: 3.5%;
+    top: 22%;
+    right: 2%;
+    transform: rotate(180deg);
+    z-index: 100;
+}
+
+#overskrift {
+    color: #fff;
+    font-family: sans-serif;
+    margin-left: 2%;
+    margin-top: 1.4%;
+    margin-bottom: 0;
+}
+
+#beskrivelse {
+    position: absolute;
+    top: 5%;
+    right: 6%;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+#flexxx {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#bredde {
+    margin-top: 0;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#bredde p {
+    margin-top: 0.5%;
+    margin-bottom: .5%;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+#text1 {
+    margin-left: 2.1%;
+}
+
+#text2 {
+    margin-right: 9.5%;
+}
+
+.center {
+    width: 75%;
+}
+
+#adskiller {
+    height: 2px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #949494
+}
+
+.gridindleg {
+    width: 75%;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 65% 35%;
+    height: auto;
+    margin-bottom: 1%;
+}
+
+.overskriftdisk {
+    font-family: sans-serif;
+    margin: 0;
+    font-size: 16px;
+    color: #C46C9A;
+    margin-top: 1%;
+    margin-left: 3.3%;
+    grid-area: 1/1/2/2
+}
+
+.type1 {
+    font-family: sans-serif;
+    font-size: 12px;
+    grid-area: 2/1/3/2;
+    margin: 0;
+    margin-top: 1%;
+    margin-left: 3.3%;
+}
+
+.ekstra {
+    color: #C46C9A;
+}
+
+.byline {
+    font-family: sans-serif;
+    font-size: 12px;
+    margin: 0;
+    grid-area: 1/2/2/3;
+    margin-top: 5%;
+    font-weight: bold;
+}
+
+.forfatter {
+    font-weight: normal;
+}
+
+.tid {
+    font-family: sans-serif;
+    font-size: 12px;
+    margin: 0;
+    grid-area: 2/2/3/3;
+    margin-top: 3%;
+    font-weight: bold;
+}
+
+#bgc3 {
+    width: 75%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#bgc3 h2 {
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-left: 2.6%;
+}
+
+
+
+.gridgrupper {
+    display: grid;
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+    grid-template-columns: 60% 35% 5%;
+    grid-template-rows: 35% 65%;
+    background-color: #F3F3F3;
+}
+
+.hvilketforum {
+    font-family: sans-serif;
+    grid-area: 1/1/2/2;
+    margin-left: 4.5%;
+    font-size: 18px;
+    color: #C46C9A;
+}
+
+.foruminfo {
+    font-family: sans-serif;
+    grid-area: 2/1/2/2;
+    margin-left: 4.5%;
+    font-size: 14px;
+    margin-top: 1%;
+    max-width: 90%;
+    overflow: auto;
+}
+
+.borderbetween {
+    width: 2px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.2);
+    grid-area: 1/2/2/3
+}
+
+.lastest {
+    grid-area: 1/2/2/3;
+    margin: 0;
+    margin-left: 5%;
+    margin-top: 8%;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.titel {
+    grid-area: 2/2/3/3;
+    margin: 0;
+    margin-left: 5%;
+    margin-top: 4%;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #C46C9A;
+}
+
+.hvem {
+    grid-area: 2/2/3/3;
+    margin: 0;
+    margin-left: 5%;
+    margin-top: 11%;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.tid2 {
+    grid-area: 2/3/3/4;
+    margin: 0;
+    margin-left: 0;
+    margin-top: 70%;
+    font-family: sans-serif;
+    font-size: 10px;
+}
+
+}
