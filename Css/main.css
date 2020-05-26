@@ -49,7 +49,7 @@ a:hover {
 footer {
     background-color: var(--footer);
     margin-top: 7rem;
-    padding: 3em 5em 5em 5em;
+    padding: 3em 11% 5em 11%;
     font-size: 1.2rem;
     display: grid;
     grid-template-columns: repeat(3, 300px);

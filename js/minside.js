@@ -21,39 +21,39 @@ document.getElementById('text2').addEventListener('click', function () {
     main.innerHTML = `<div id="picoverhead">
             <div id="billede4">
                 <p class="tekst">Strikning</p>
-                <img class="billeder" src="images/sokkker.jpg" alt="Strikkede strømper">
+                <img class="billeder" src="./images/sokkker.jpg" alt="Strikkede strømper">
             </div>
             <div id="billede3">
                 <p class="tekst">Hækling</p>
-                <img class="billeder" src="images/bamsebjorn.jpg" alt="Hæklede bamser">
+                <img class="billeder" src="./images/bamsebjorn.jpg" alt="Hæklede bamser">
             </div>
             <div id="billede1">
                 <p class="tekst">Strikning</p>
-                <img class="billeder" src="images/poncho.jpg" alt="Strikket Poncho">
+                <img class="billeder" src="./images/poncho.jpg" alt="Strikket Poncho">
             </div>
             <div id="billede9">
                 <p class="tekst">Hækling</p>
-                <img class="billeder" src="images/bamse.jpg" alt="Hæklet bamse">
+                <img class="billeder" src="./images/bamse.jpg" alt="Hæklet bamse">
             </div>
             <div id="billede6">
                 <p class="tekst">Hækling</p>
-                <img class="billeder" src="images/trostedyr.jpg" alt="Trøstedyr med klud">
+                <img class="billeder" src="./images/trostedyr.jpg" alt="Trøstedyr med klud">
             </div>
             <div id="billede8">
                 <p class="tekst">Strikning</p>
-                <img class="billeder" src="images/pude.jpg" alt="Strikket pude">
+                <img class="billeder" src="./images/pude.jpg" alt="Strikket pude">
             </div>
             <div id="billede5">
                 <p class="tekst">Strikning</p>
-                <img class="billeder" src="images/sweater.jpg" alt="Strikket sweater">
+                <img class="billeder" src="./images/sweater.jpg" alt="Strikket sweater">
             </div>
             <div id="billede7">
                 <p class="tekst">Strikning</p>
-                <img class="billeder" src="images/hue.jpg" alt="Strikket hue">
+                <img class="billeder" src="./images/hue.jpg" alt="Strikket hue">
             </div>
             <div id="billede2">
                 <p class="tekst">Strikning</p>
-                <img class="billeder" src="images/babydragt.jpg" alt="Strikket babysuit">
+                <img class="billeder" src="./images/babydragt.jpg" alt="Strikket babysuit">
             </div>
         </div> `
 })
@@ -71,39 +71,39 @@ document.getElementById('text1').addEventListener('click', function () {
     main.innerHTML = `<div id="picoverhead">
             <div id="billede1">
                 <p class="tekst">Strikning</p>
-                <img class="billeder" src="images/sokkker.jpg" alt="Strikkede strømper">
+                <img class="billeder" src="./images/sokkker.jpg" alt="Strikkede strømper">
             </div>
             <div id="billede2">
                 <p class="tekst">Hækling</p>
-                <img class="billeder" src="images/bamsebjorn.jpg" alt="Hæklede bamser">
+                <img class="billeder" src="./images/bamsebjorn.jpg" alt="Hæklede bamser">
             </div>
             <div id="billede3">
                 <p class="tekst">Strikning</p>
-                <img class="billeder" src="images/poncho.jpg" alt="Strikket Poncho">
+                <img class="billeder" src="./images/poncho.jpg" alt="Strikket Poncho">
             </div>
             <div id="billede4">
                 <p class="tekst">Hækling</p>
-                <img class="billeder" src="images/bamse.jpg" alt="Hæklet bamse">
+                <img class="billeder" src="./images/bamse.jpg" alt="Hæklet bamse">
             </div>
             <div id="billede5">
                 <p class="tekst">Hækling</p>
-                <img class="billeder" src="images/trostedyr.jpg" alt="Trøstedyr med klud">
+                <img class="billeder" src="./images/trostedyr.jpg" alt="Trøstedyr med klud">
             </div>
             <div id="billede6">
                 <p class="tekst">Strikning</p>
-                <img class="billeder" src="images/pude.jpg" alt="Strikket pude">
+                <img class="billeder" src="./images/pude.jpg" alt="Strikket pude">
             </div>
             <div id="billede7">
                 <p class="tekst">Strikning</p>
-                <img class="billeder" src="images/sweater.jpg" alt="Strikket sweater">
+                <img class="billeder" src="./images/sweater.jpg" alt="Strikket sweater">
             </div>
             <div id="billede8">
                 <p class="tekst">Strikning</p>
-                <img class="billeder" src="images/hue.jpg" alt="Strikket hue">
+                <img class="billeder" src="./images/hue.jpg" alt="Strikket hue">
             </div>
             <div id="billede9">
                 <p class="tekst">Strikning</p>
-                <img class="billeder" src="images/babydragt.jpg" alt="Strikket babysuit">
+                <img class="billeder" src="./images/babydragt.jpg" alt="Strikket babysuit">
             </div>
         </div> `
 })
@@ -121,39 +121,39 @@ document.getElementById('text3').addEventListener('click', function () {
     main.innerHTML = `<div id="picoverhead">
             <div id="billede8">
                 <p class="tekst">Strikning</p>
-                <img class="billeder" src="images/sokkker.jpg" alt="Strikkede strømper">
+                <img class="billeder" src="./images/sokkker.jpg" alt="Strikkede strømper">
             </div>
             <div id="billede9">
                 <p class="tekst">Hækling</p>
-                <img class="billeder" src="images/bamsebjorn.jpg" alt="Hæklede bamser">
+                <img class="billeder" src="./images/bamsebjorn.jpg" alt="Hæklede bamser">
             </div>
             <div id="billede6">
                 <p class="tekst">Strikning</p>
-                <img class="billeder" src="images/poncho.jpg" alt="Strikket Poncho">
+                <img class="billeder" src="./images/poncho.jpg" alt="Strikket Poncho">
             </div>
             <div id="billede1">
                 <p class="tekst">Hækling</p>
-                <img class="billeder" src="images/bamse.jpg" alt="Hæklet bamse">
+                <img class="billeder" src="./images/bamse.jpg" alt="Hæklet bamse">
             </div>
             <div id="billede2">
                 <p class="tekst">Hækling</p>
-                <img class="billeder" src="images/trostedyr.jpg" alt="Trøstedyr med klud">
+                <img class="billeder" src="./images/trostedyr.jpg" alt="Trøstedyr med klud">
             </div>
             <div id="billede3">
                 <p class="tekst">Strikning</p>
-                <img class="billeder" src="images/pude.jpg" alt="Strikket pude">
+                <img class="billeder" src="./images/pude.jpg" alt="Strikket pude">
             </div>
             <div id="billede4">
                 <p class="tekst">Strikning</p>
-                <img class="billeder" src="images/sweater.jpg" alt="Strikket sweater">
+                <img class="billeder" src="./images/sweater.jpg" alt="Strikket sweater">
             </div>
             <div id="billede5">
                 <p class="tekst">Strikning</p>
-                <img class="billeder" src="images/hue.jpg" alt="Strikket hue">
+                <img class="billeder" src="./images/hue.jpg" alt="Strikket hue">
             </div>
             <div id="billede7">
                 <p class="tekst">Strikning</p>
-                <img class="billeder" src="images/babydragt.jpg" alt="Strikket babysuit">
+                <img class="billeder" src="./images/babydragt.jpg" alt="Strikket babysuit">
             </div>
         </div> `
 })
