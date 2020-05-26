@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
     <script src="https://kit.fontawesome.com/d577d4a2e5.js" crossorigin="anonymous"></script>
     <title>KreaPlace</title>
-    <!-- <link rel="stylesheet" href="Css/style.css"> -->
     <link rel="stylesheet" href="Css/main.css">
     <link rel="stylesheet" href="Css/header.css">
     <link rel="stylesheet" href="Css/style.css">
@@ -178,28 +178,37 @@
                 <button id="nyeste" class="categories">Nyeste</button>
                 <button id="pops" class="categories">Populære</button>
                 <button id="anbefalet" class="categories">Anbefalet</button>
-                <div></div>
                 <i class="fa fa-search" id="searchbtn"></i>
             </div>
-        <div class="formfilter">
+        <div id="formfilter">
             <form class="filter" id="filter">
-                <label for="type">type</label>
-                <select id="type" name="type">
-                    <option value="Heakling">Hækling</option>
-                    <option value="Strikning">Strikning</option>
-                </select>
-                <label for="niveau">niveau</label>
-                <select id="niveau" name="niveau">
-                    <option value="begynder">Begynder</option>
-                    <option value="trenede">Trænede</option>
-                    <option value="expert">Expert</option>
-                </select>
-                <label for="kon">Køn</label>
-                <select id="kon" name="kon">
-                    <option value="mand">Mand</option>
-                    <option value="kvinde">kvinde</option>
-                </select>
-                <input type="submit" value="Submit">
+                <div>
+                    <label for="searchfield">Søgeord</label>
+                    <input type="text" id="searchfield">
+                </div>
+                <div>
+                    <label for="type">Type</label>
+                    <select id="type" name="type">
+                        <option value="Heakling">Hækling</option>
+                        <option value="Strikning">Strikning</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="niveau">Niveau</label>
+                    <select id="niveau" name="niveau">
+                        <option value="begynder">Begynder</option>
+                        <option value="trenede">Trænede</option>
+                        <option value="expert">Expert</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="kon">Køn</label>
+                    <select id="kon" name="kon">
+                        <option value="mand">Mand</option>
+                        <option value="kvinde">Kvinde</option>
+                    </select>
+                </div>
+                <input type="submit" value="Søg">
             </form>
 
         </div>

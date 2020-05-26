@@ -52,7 +52,8 @@ footer {
     padding: 3em 11% 5em 11%;
     font-size: 1.2rem;
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
 }
 
 footer a {
@@ -67,3 +68,37 @@ footer a {
 .om-os a, .information a, .konto a {
     margin: 2px 0;
 }
+
+/* @media screen and (max-width: 1000px) {
+  
+
+
+    
+
+}
+
+@media screen and (max-width: 830px) {
+  footer {
+    padding: 3em 6% 5em 6%;
+  }
+    
+
+}
+
+
+@media screen and (max-width: 650px) {
+
+
+    
+
+}
+
+@media screen and (max-width: 420px) { 
+   
+
+}
+
+@media screen and (max-width: 350px) { 
+   
+
+} */

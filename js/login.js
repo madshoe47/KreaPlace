@@ -15,15 +15,20 @@ if (localStorage.getItem('user') && sessionStorage.getItem('logedIn') === 'true'
 
 function registere(e) {
     e.preventDefault()
+    // Opretter en variable i session storage
     sessionStorage.setItem('logedIn', 'false')
+
+    // Finder reference til fejl meddelelse
     let errorMsg = document.getElementById('registreerror')
     errorMsg.style.color = 'red'
-    // Create user login, with localStorage
+
+    // Finder reference til form inputs
     const username = document.getElementById('regusername').value
     const email = document.getElementById('regemail').value.toLowerCase()
     const password = document.getElementById('regpassword').value
     const repassword = document.getElementById('reregpassword').value
     
+    // Checker om alt er udfyldt
     if (!email) {
         errorMsg.textContent = 'Udfyld venligst email felt'
     } else if(!password) {
@@ -34,21 +39,21 @@ function registere(e) {
         errorMsg.textContent = ''
     }
 
-    if (password && repassword) {
+    // Checker om Adgangskode er indtastet korrekt
         if (password !== repassword) {
             errorMsg.textContent = 'Kodeord stemte ikke overens'
        } else {
+           // Gemmer oplysninger om bruger i Local storage og giver brugern besked om registreing.
            errorMsg.textContent = ''
-        //    Everything is good
-        localStorage.setItem('user', `{"username": "${username}","password": "${password}","email": "${email}"}`)
-
+            localStorage.setItem('user', `{"username": "${username}","password": "${password}","email": "${email}"}`)
            errorMsg.style.color = 'darkgreen'
            errorMsg.textContent = 'Du er nu registreret'
+
+        //    Efter 1 sekund genlæses siden med oplysninger i URL
            setTimeout(function() {
             window.location = window.location.search = `?username=${username}&email=${email}&password=${password}`
            }, 1000)
        }
-    }
 }
 
 function logon(e) {

@@ -124,25 +124,33 @@ document.getElementById('anbefalet').addEventListener('click', function () {
 
 
 // // Filter appere
+
 const filter = document.getElementById('filter')
+const formfilter = document.getElementById('formfilter')
 const search = document.getElementById('searchbtn')
+
 let showFilter = false
 
+const currentHeight = getComputedStyle(formfilter, null).getPropertyValue("height")
+const currentPadding = getComputedStyle(formfilter, null).getPropertyValue("padding")
+const currentMargin = getComputedStyle(formfilter, null).getPropertyValue("marginBottom")
 
-search.addEventListener('mouseleave', function() {
-    console.log('hey');
-    
-    if (!showFilter)
-        search.style.clipPath = "circle(50.0% at 50% 50%)"
-}) 
+formfilter.style.height = '0px'
+formfilter.style.padding = '0em 0'
+formfilter.style.margin = '0'
 
 search.onclick = function() {
     showFilter = !showFilter
+
     if (showFilter) {
-    search.style.clipPath = "circle(100.0% at 50% 50%)"
-     filter.style.clipPath = "circle(120.0% at 55% 0%)"
+        formfilter.style.height = currentHeight
+        formfilter.style.padding = currentPadding
+        formfilter.style.marginBottom = currentMargin
+     filter.style.clipPath = "circle(200.0% at 55% 0%)"
  } else {
-    search.style.clipPath = "circle(50.0% at 50% 50%)"
     filter.style.clipPath = "circle(00.0% at 55% 0%)"
+    formfilter.style.height = '0px'
+    formfilter.style.padding = '0em 0'
+    formfilter.style.marginBottom = '0em'
  }
 }
